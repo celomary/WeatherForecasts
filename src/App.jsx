@@ -24,8 +24,16 @@ function App() {
     }
   }, []);
   return (<div className="container">
+  {
+    weather ? <>
       <LeftSide />
       <RightSide />
+      </> : <>
+        <div className="waiting">
+          Loading...
+        </div>
+      </>
+  }
   </div>
   )
 }
