@@ -10,6 +10,7 @@ function App() {
   const dispatch = useDispatch();
   const weather = useSelector(state => state.weather);
   useEffect(()=>{
+    /*
     if (navigator.geolocation)
     {
       navigator.geolocation.getCurrentPosition((position)=>{
@@ -22,6 +23,7 @@ function App() {
     {
       getWeatherByCity(dispatch, 'london');
     }
+    */
   }, []);
   return (<div className="container">
   {
