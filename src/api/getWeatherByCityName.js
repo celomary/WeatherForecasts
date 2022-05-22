@@ -3,12 +3,8 @@ import getCityId from "../utils/getCityIdByName";
 
 
 const getWeatherByCity = async (dispatch, city)=>{
-    fetch(`https://api.weatherbit.io/v2.0/forecast/daily?city_id=${getCityId(city)}&key=${import.meta.env.VITE_API_KEY}`).then(res=> res.json()).then(
-        (data)=>{
-            dispatch(setWeather(data));
-        }).catch(error=>{
-            console.error(error);
-        })
+    const data = await (await fetch(`https://api.weatherbit.io/v2.0/forecast/daily?city_id=${getCityId(city)}&key=${import.meta.env.VITE_API_KEY}`)).json();
+    dispatch(setWeather(data));
 }
 
 export default getWeatherByCity;
