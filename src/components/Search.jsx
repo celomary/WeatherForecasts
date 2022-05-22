@@ -1,6 +1,6 @@
 import '../styles/Search.css';
-import cities from '../assets/cities_all.json';
-import { useEffect, useRef, useState } from 'react';
+{/*import cities from '../assets/cities_all.json';*/}
+import {  useRef, useState } from 'react';
 import getWeatherById from '../api/getWeatherByCityId';
 import { useDispatch } from 'react-redux';
 
@@ -29,11 +29,12 @@ const Search = ({activateSearch})=>{
             <input ref={SearchInput} type="text" placeholder='search location...' />
             </div>
             <div className="btn" onClick={()=>{
-                    
+             /*
                 const locations = cities.results.filter(city=>{
                     return city.city_name.toLowerCase() === SearchInput.current.value.toLowerCase();
                 })
                 setFoundLocations(locations)
+                */
                 
             }}>
                 Search

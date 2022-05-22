@@ -1,5 +1,5 @@
-import cities from '../assets/cities_all.json';
-
+//import cities from '../assets/cities_all.json';
+/*
 const getCityId = (cityName)=>{
     for (const city of cities.results)
     {
@@ -11,3 +11,4 @@ const getCityId = (cityName)=>{
 
 
 export default getCityId;
+*/
