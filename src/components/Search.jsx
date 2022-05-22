@@ -1,7 +1,7 @@
 import '../styles/Search.css';
 {/*import cities from '../assets/cities_all.json';*/}
 import {  useRef, useState } from 'react';
-import getWeatherById from '../api/getWeatherByCityId';
+//import getWeatherById from '../api/getWeatherByCityId';
 import { useDispatch } from 'react-redux';
 
 const Search = ({activateSearch})=>{
@@ -10,7 +10,7 @@ const Search = ({activateSearch})=>{
     const dispatch = useDispatch();
 
     const foundLocationHandler = (city_id)=>{
-        getWeatherById(dispatch, city_id);
+        //getWeatherById(dispatch, city_id);
     }
     const SearchHandler = ()=>{
         activateSearch();
