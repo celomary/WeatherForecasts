@@ -1,0 +1,243 @@
+.right-side {
+    width: 68%;
+    background-color: #100E1D;
+}
+
+.right-side .wrapper {
+    width: 87%;
+    margin: auto;
+}
+
+.temperature-btn {
+    display: flex;
+    margin-top: 5vh;
+    justify-content: flex-end;
+    color: #E7E7EB;
+}
+
+.temperature-btn .degree {
+    background-color: #585676;
+    margin-left: 12px;
+    font-weight: 700;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    padding: 9px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.active-btn {
+    background-color: #E7E7EB !important;
+    color: #110E3C;
+    cursor: default !important;
+}
+
+.forecasts-five-days {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 26px;
+    margin-top: 36px;
+}
+
+.forecast-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1E213A;
+    padding: 18px;
+}
+
+.forecast-day > h2 {
+    color: #E7E7EB;
+    font-weight: 500;
+    font-size: 16px; 
+    text-align: center;
+}
+
+.forecast-day > img {
+    display: block;
+    width: 70px;
+    margin-bottom: 31px;
+    margin-top: 10px;
+}
+
+.forecast-day > .temperature-minmax {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.forecast-day > .temperature-minmax > .min {
+    color: #E7E7EB;
+}
+
+.forecast-day > .temperature-minmax > .max {
+    color:#A09FB1;
+}
+
+.highlights {
+    margin-top: 72px;
+
+}
+
+.highlights>  h2 {
+    color: #E7E7EB;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+
+.highlights-container {
+    display: grid;
+    row-gap: 48px;
+    column-gap: 48px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+}
+
+.highlight {
+    background-color: #1E213A;
+    padding: 22px 0;
+}
+
+.highlight  > h2 {
+    color: #E7E7EB;
+    font-size: 16px;
+    text-align: center;
+}
+
+.highlight  > .value {
+    color: #E7E7EB;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    margin-top: 6px;
+}
+
+.highlight  > .value > h2 {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.highlight  > .value > p {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 52px;
+}
+
+.compass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17px;
+    color:#E7E7EB;
+}
+
+.compass > p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.compass-container {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    background-color: #616475;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 5px;
+   
+}
+
+.progress {
+        display: block;
+        height: 8px;
+        width: 69%;
+        background-color: #E7E7EB;
+        border-radius: 80px;
+        margin : auto;
+        position: relative;
+        margin-top: 30px;
+}
+
+.progress-line {
+    height: 100%;
+    width: 50%;
+    background-color: #FFEC65;
+    border-radius: 80px;
+}
+
+
+.progress-percent {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 100%;
+    top: -18px;
+    left:0;
+    color: #A09FB1;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.progress > p {
+    text-align: right;
+    color: #A09FB1;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.footer {
+    color: #A09FB1;
+    margin-top: 113px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #A09FB1;
+    font-weight: 700;
+}
+
+@media screen and (max-width:  1061px)
+{
+    .forecasts-five-days  {
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 20px;
+    }
+}
+
+@media screen and (max-width:  887px)
+{
+    .forecasts-five-days  {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .right-side {
+        width: 100%;
+    }
+    .forecasts-five-days  {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .highlights-container {
+        grid-template-columns: 1fr;
+    }
+    .temperature-btn {
+        opacity: 0;
+    }
+}

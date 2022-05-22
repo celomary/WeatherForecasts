@@ -1,0 +1,13 @@
+.left-side {
+    width: 32%;
+    height: 970px;
+    background-color: #1E213A;
+    position: relative;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .left-side {
+        width: 100%;
+    }
+}

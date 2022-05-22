@@ -1,0 +1,98 @@
+.search {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    color: #E7E7EB;
+    display: inline-block;
+}
+
+.search > .close-icon {
+    position: absolute;
+    right: 3.75vw;
+    top: 1.86vh;
+    user-select: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.search .search-container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 82px;
+    justify-content: space-between;
+}
+
+.search .search-container .input-controller {
+    width: 73%;
+    border: 1px solid #E7E7EB;
+}
+
+.search .search-container .btn {
+    width: 23%;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #3C47E9;
+    color: #E7E7EB;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    line-height: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.search .input-controller {
+    display: flex;
+    align-items: center;
+}
+
+.input-controller > span {
+    font-size: 22px;
+    color: #616475;
+    font-weight: 600;
+    margin: 15px;
+}
+
+.input-controller > input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #E7E7EB;
+    height: 100%;
+    font-size: 16px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    width:  calc(100% - 22px - 30px);
+    font-weight: 500;
+}
+
+
+.found-locations {
+    margin-top: 58px;
+}
+
+.f-location {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23px 12px;
+    width: 90%;
+    margin: auto;
+    user-select: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.f-location > span {
+    opacity: 0;
+    color: #616475;
+}
+
+.f-location:hover {
+    border-color: #616475;
+}
+
+.f-location:hover > span {
+    opacity: 1;
+}

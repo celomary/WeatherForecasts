@@ -1,0 +1,149 @@
+.info {
+    width: 100%;
+    background-color: #1E213A;
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: 5;
+    transform: translateX(100%);
+    transition: transform .2s ease;
+}
+
+.info-toggled {
+    transform: translateX(0%);
+}
+/* search btns*/
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 42px;
+    color : #E7E7EB;
+}
+
+.search-btn {
+    background-color: #6E707A;
+    padding: 10px 18px;
+    font-size: 16px;
+    font-weight: 500;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.search-icon  {
+    padding: 9px;
+    background-color: #6E707A;
+    border-radius: 100%;
+    font-size: 16px;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.icons {
+    display: block !important;
+}
+
+
+/* icons */
+
+.current-weather-icon-container  {
+    height: 333px;
+    width: 100%;
+    background-image: url('../assets/Cloud-background.png');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: 50%;
+    margin-top: 21px;
+}
+
+.current-weather-icon-container .wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #1E213Ae7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.current-weather-icon-container .wrapper img {
+    display: block;
+    height: 60%;
+}
+
+.current-weather-temperature  {
+    width: 100%;
+    color: #A09FB1;
+    margin-top: 63px;
+}
+
+.weather-degree {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 87px;
+}
+
+.weather-degree > * {
+    display: inline-block;
+}
+
+.weather-degree > .temperature-number {
+    font-size: 124px;
+    font-weight: 500;
+    color: #E7E7EB;
+}
+
+.weather-degree > .temperature-type {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+
+.weather-name {
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 87px;
+}
+
+.weather-date {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 33px;
+    align-items: center;
+
+}
+
+.weather-date .date-point {
+    margin-left: 1.11vw;
+    margin-right: 1.11vw;
+}
+
+.weather-location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.weather-location .pin {
+    margin-right: 0.625vw;
+    font-size: 24px;
+}
+
+.weather-location > p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px)
+{
+    .weather-name {
+        font-size: 24px;
+    }
+}
