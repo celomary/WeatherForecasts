@@ -1,4 +1,4 @@
-/*import { setWeather } from "../features/Weather";
+import { setWeather } from "../features/Weather";
 
 
 const getWeatherById = async (dispatch, id)=>{
@@ -7,4 +7,3 @@ const getWeatherById = async (dispatch, id)=>{
 }
 
 export default getWeatherById;
-*/

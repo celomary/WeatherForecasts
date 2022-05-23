@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { changeTemperature, Celsius, Fahrenheit  } from '../features/temperature';
 import dateFormat from '../utils/dateFormat';
 import ConvertCelsius2Fahrenheit from '../utils/convertCelsiusToFahrenheit';
-/* r02d */
+
 const RightSide = ()=>{
     const weather = useSelector(state => state.weather);
     const temperature = useSelector(state => state.temperature);
