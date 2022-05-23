@@ -1,6 +1,7 @@
 .left-side {
     width: 32%;
-    height: 970px;
+    min-height: 970px;
+    height: 100%;
     background-color: #1E213A;
     position: relative;
     overflow-x: hidden;
