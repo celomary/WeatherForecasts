@@ -141,7 +141,7 @@
     font-weight: 600;
 }
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 880px)
 {
     .weather-name {
         font-size: 24px;
